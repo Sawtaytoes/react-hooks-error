@@ -1,0 +1,16 @@
+{
+  "name": "root",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "appA": "yarn workspace appA start",
+    "appB": "yarn workspace appB start",
+    "build-component-library": "yarn workspace component-library build",
+    "component-library": "yarn workspace component-library start"
+  },
+  "devDependencies": {
+    "lerna": "^4.0.0"
+  }
+}
